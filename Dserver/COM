@@ -1,0 +1,48 @@
+In file included from http.h:16:0,
+                 from http.cpp:1:
+http_data_structure.h:26:23: warning: ‘state_code’ initialized and declared ‘extern’ [enabled by default]
+ extern map<int,string>state_code={
+                       ^
+http_data_structure.h:64:26: warning: ‘server_mime’ initialized and declared ‘extern’ [enabled by default]
+ extern map<string,string>server_mime={
+                          ^
+http.cpp: In member function ‘int HttpRequest::RequestParse()’:
+http.cpp:101:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+In file included from http_error.h:6:0,
+                 from http_error.cpp:2:
+http_data_structure.h:26:23: warning: ‘state_code’ initialized and declared ‘extern’ [enabled by default]
+ extern map<int,string>state_code={
+                       ^
+http_data_structure.h:64:26: warning: ‘server_mime’ initialized and declared ‘extern’ [enabled by default]
+ extern map<string,string>server_mime={
+                          ^
+In file included from http_out_filter.h:5:0,
+                 from http_out_filter.cpp:8:
+http_data_structure.h:26:23: warning: ‘state_code’ initialized and declared ‘extern’ [enabled by default]
+ extern map<int,string>state_code={
+                       ^
+http_data_structure.h:64:26: warning: ‘server_mime’ initialized and declared ‘extern’ [enabled by default]
+ extern map<string,string>server_mime={
+                          ^
+http.o: In function `__gnu_cxx::new_allocator<std::_Rb_tree_node<std::pair<std::string const, std::string> > >::new_allocator(__gnu_cxx::new_allocator<std::_Rb_tree_node<std::pair<std::string const, std::string> > > const&)':
+/home/scottdw/web_server/Dserver/http.cpp:3: multiple definition of `state_code'
+Dserver.o:/home/scottdw/web_server/Dserver/Dserver.cpp:17: first defined here
+http.o: In function `std::allocator<std::_Rb_tree_node<std::pair<std::string const, std::string> > >::allocator(std::allocator<std::_Rb_tree_node<std::pair<std::string const, std::string> > > const&)':
+/home/scottdw/web_server/Dserver/http.cpp:3: multiple definition of `server_mime'
+Dserver.o:/home/scottdw/web_server/Dserver/Dserver.cpp:17: first defined here
+http_error.o: In function `__gnu_cxx::new_allocator<std::_Rb_tree_node<std::pair<std::string const, std::string> > >::new_allocator(__gnu_cxx::new_allocator<std::_Rb_tree_node<std::pair<std::string const, std::string> > > const&)':
+/home/scottdw/web_server/Dserver/http_error.cpp:6: multiple definition of `state_code'
+Dserver.o:/home/scottdw/web_server/Dserver/Dserver.cpp:17: first defined here
+http_error.o: In function `std::allocator<std::_Rb_tree_node<std::pair<std::string const, std::string> > >::allocator(std::allocator<std::_Rb_tree_node<std::pair<std::string const, std::string> > > const&)':
+/home/scottdw/web_server/Dserver/http_error.cpp:8: multiple definition of `server_mime'
+Dserver.o:/home/scottdw/web_server/Dserver/Dserver.cpp:17: first defined here
+http_out_filter.o: In function `__gnu_cxx::new_allocator<std::_Rb_tree_node<std::pair<std::string const, std::string> > >::new_allocator(__gnu_cxx::new_allocator<std::_Rb_tree_node<std::pair<std::string const, std::string> > > const&)':
+/home/scottdw/web_server/Dserver/http_out_filter.cpp:37: multiple definition of `state_code'
+Dserver.o:/home/scottdw/web_server/Dserver/Dserver.cpp:17: first defined here
+http_out_filter.o: In function `std::tuple<std::string const&>::tuple(std::tuple<std::string const&>&&)':
+/home/scottdw/web_server/Dserver/http_out_filter.cpp:38: multiple definition of `server_mime'
+Dserver.o:/home/scottdw/web_server/Dserver/Dserver.cpp:17: first defined here
+collect2: error: ld returned 1 exit status
+make: *** [Dserver] 错误 1

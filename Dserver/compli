@@ -1,0 +1,5 @@
+thread_pool.cpp: In destructor ‘Pool::~Pool()’:
+thread_pool.cpp:160:30: error: ‘pthread_cond_destory’ was not declared in this scope
+    pthread_cond_destory(&cond);
+                              ^
+make: *** [thread_pool.o] 错误 1

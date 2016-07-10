@@ -1,0 +1,13 @@
+DEBUG: sock.cpp 12 create socket fd is: 3
+DEBUG: Dserver.cpp 43 ready fd is : 3
+DEBUG: Dserver.cpp 81 accept a fd : 5
+DEBUG: Dserver.cpp 70 accept all
+DEBUG: Dserver.cpp 43 ready fd is : 5
+read: Resource temporarily unavailable
+
+DEBUG: Dserver.cpp 43 ready fd is : 3
+DEBUG: Dserver.cpp 81 accept a fd : 6
+DEBUG: Dserver.cpp 70 accept all
+DEBUG: Dserver.cpp 43 ready fd is : 6
+read: Resource temporarily unavailable
+
